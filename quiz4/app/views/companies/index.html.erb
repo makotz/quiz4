@@ -1,0 +1,12 @@
+<h1>Company Index</h1>
+<div class="companies">
+  <% @companies.each do |company| %>
+  <li>
+    <%= company.title %>, <%= link_to "Like", company_likes_path(company), method: :post %> (<%= company.like %>)<br>
+    <% company.products.each do |product| %>
+      <%= product.product %>
+    <% end %>
+    <hr>
+  </li>
+  <% end %>
+</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz4 Client</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="mustache.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <script id="company-template" type="x-tmpl-mustache">
+          <div class='company' data-id="{{id}}">
+            <h1>{{name}}</h1><h3>({{likes}})<a href="#" class="like">Like</a></h3>
+            <h3>{{products}}</h3>
+            <hr>
+          </div>
+    </script>
+    <br>
+    <br>
+    <br>
+    All Companies
+    <div id="companies"></div>
+  </body>
+</html>
